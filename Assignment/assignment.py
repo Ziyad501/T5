@@ -2,11 +2,11 @@
 
 
 
-text = open("T5Projects/tweets.txt").read()
+text = open("tweets.txt").read()
 
 lower_case = text.lower()
 
-split_words = text.split()
+split_words = text.split("\n")
 
 
 
@@ -18,7 +18,7 @@ for word in split_words:
 
 
 
-negative_words = open("T5Projects/negative_words.txt")
+negative_words = open("negative_words.txt")#.read()
 
 nw = []
 for nwords in negative_words:
@@ -27,7 +27,7 @@ for nwords in negative_words:
 
 #print(nw) 
 
-p_words = open("T5Projects/positive_words.txt")    
+p_words = open("positive_words.txt")#.read()   
 
 pw = []
 for pwords in p_words:
